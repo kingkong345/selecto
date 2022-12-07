@@ -1,0 +1,828 @@
+.container {
+  width: 1200px;
+}
+
+#main {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#main-visual {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+#main-visual #myVideo {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+#main-visual #myVideo #background-video {
+  width: 100vw;
+  position: absolute;
+}
+#main-visual .mask {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  height: 100%;
+  position: relative;
+}
+#main-visual .mask .title {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  font-weight: 500;
+  color: #fff;
+  transform: translateY(-30%);
+}
+#main-visual .mask .title .title-box {
+  line-height: 1.5;
+  word-break: keep-all;
+}
+#main-visual .mask .title .title-box #myBtn {
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: #2b38e9;
+  opacity: 75%;
+  margin-top: 50px;
+  transition: all 0.25s ease;
+  position: relative;
+  margin-left: -5px;
+}
+#main-visual .mask .title .title-box h2 {
+  font-size: clamp(35px, 49 / 1920 * 100vw, 49px);
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+#main-visual .mask .title .title-box h2 strong {
+  opacity: 50%;
+}
+#main-visual .mask .title .title-box h2 p {
+  font-size: 20px;
+  font-weight: 300;
+}
+#main-visual .mask .title .title-box .txt {
+  width: 600px;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+#about {
+  width: 100vw;
+  height: 100%;
+  padding: 150px 0;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+#about .mask {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#about .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#about .title-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+#about .title-box h3 {
+  width: 30%;
+  font-weight: 700;
+  font-size: clamp(29px, 49 / 1920 * 100vw, 49px);
+}
+#about .title-box h3 span {
+  position: relative;
+  z-index: 1;
+}
+#about .title-box h3 span::after {
+  content: "";
+  display: block;
+  height: 10px;
+  position: absolute;
+  right: 100px;
+  bottom: 40%;
+  width: 110%;
+  left: -10px;
+  z-index: -1;
+  background-color: rgba(43, 56, 233, 0.25);
+  border-radius: 100px;
+  transform-origin: 0px 50%;
+  transform: translate(0px 0px);
+}
+#about .title-box p {
+  display: block;
+  width: 70%;
+  font-size: 18px;
+}
+#about .keyword-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 120px;
+  word-break: keep-all;
+}
+#about .keyword-box li {
+  width: 25%;
+  padding-right: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+#about .keyword-box li:nth-last-child(1) {
+  padding-right: 0;
+}
+#about .keyword-box li .icon01 {
+  transition: all 0.25s ease;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background: url(../images/main/about/icon01.png) no-repeat;
+  background-position: center center;
+  background-size: clamp(50px, 3.6458333333vw, 70px);
+  left: -15px;
+  margin-bottom: 15px;
+}
+#about .keyword-box li .icon02 {
+  transition: all 0.25s ease;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background: url(../images/main/about/icon02.png) no-repeat;
+  background-position: center center;
+  background-size: clamp(50px, 3.6458333333vw, 70px);
+  left: -15px;
+  margin-bottom: 15px;
+}
+#about .keyword-box li .icon03 {
+  transition: all 0.25s ease;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background: url(../images/main/about/icon03.png) no-repeat;
+  background-position: center center;
+  background-size: clamp(50px, 3.6458333333vw, 70px);
+  left: -15px;
+  margin-bottom: 15px;
+}
+#about .keyword-box li .icon04 {
+  transition: all 0.25s ease;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background: url(../images/main/about/icon04.png) no-repeat;
+  background-position: center center;
+  background-size: clamp(50px, 3.6458333333vw, 70px);
+  left: -15px;
+  margin-bottom: 15px;
+}
+#about .keyword-box li dt {
+  font-weight: 500;
+  font-size: clamp(18px, 28 / 1920 * 100vw, 28px);
+}
+#about .keyword-box li dd {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#skills {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #ececec;
+}
+#skills .play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#skills .play svg {
+  color: #2b38e9;
+  position: absolute;
+  height: 100%;
+  width: 600px;
+  top: -100px;
+  z-index: 99;
+}
+#skills .play svg path {
+  width: 600px;
+  stroke-width: 1.5px;
+}
+#skills .mask {
+  width: 100%;
+  height: 100%;
+  bottom: 50%;
+  overflow: hidden;
+  transform: translateY(20%);
+}
+#skills ul {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translate(-30%, 50%);
+  white-space: nowrap;
+}
+#skills li {
+  display: inline-block;
+  position: relative;
+  color: #2b38e9;
+}
+#skills li.skill-title {
+  width: 250px;
+}
+#skills li.skill-title h3 {
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: clamp(19px, 30 / 1920 * 100vw, 30px);
+}
+#skills li.skill-txt {
+  width: auto;
+  margin: 0 70px;
+  line-height: 1.5;
+}
+#skills li.skill-txt .type {
+  font-size: 13px;
+}
+#skills li.skill-txt h4 {
+  font-weight: 500;
+  font-size: clamp(16px, 27 / 1920 * 100vw, 27px);
+}
+#skills li.skill-txt .num {
+  font-weight: 300;
+  font-size: clamp(18px, 30 / 1920 * 100vw, 30px);
+}
+
+#projects {
+  width: 100%;
+  padding: 130px 0;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+#projects .container {
+  position: relative;
+  margin: 0 auto;
+}
+#projects .container .projects-pagination {
+  display: none;
+}
+#projects .container h2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: clamp(29px, 49 / 1920 * 100vw, 49px);
+}
+#projects .container .btn {
+  top: 350px;
+  color: #222;
+  font-size: clamp(35px, 59 / 1920 * 100vw, 59px);
+  height: 100px;
+  width: 100px;
+}
+#projects .container .btn-prev {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+}
+#projects .container .btn-next {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+}
+#projects .container .banner {
+  margin-top: 100px;
+  height: 100%;
+}
+#projects .container .banner ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+#projects .container .banner ul li {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  transition: all 0.25s ease;
+}
+#projects .container .banner ul li a {
+  width: clamp(300px, 101.8518518519vw, 1100px);
+  padding: 0 50px;
+  transition: all 0.25s ease;
+  box-sizing: border-box;
+  position: relative;
+  width: 1000px;
+}
+#projects .container .banner ul li a .view {
+  transition: all 0.25s ease;
+  display: none;
+}
+#projects .container .banner ul li a .project-img01 {
+  padding-top: 53%;
+  image-rendering: -webkit-optimize-contrast;
+  transform: translateZ(0);
+  width: 100%;
+  transition: all 0.25s ease;
+  position: relative;
+  border: 16px solid #222;
+  background: url(../images/main/projects/project-img01.JPG) no-repeat;
+  background-position: center top;
+  background-size: cover;
+  border-radius: 15px;
+  z-index: 2;
+}
+#projects .container .banner ul li a .project-img01::after {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  margin-top: -488px;
+  content: "";
+  border-radius: 100px;
+  background-color: #999;
+}
+#projects .container .banner ul li a .project-img02 {
+  padding-top: 53%;
+  image-rendering: -webkit-optimize-contrast;
+  transform: translateZ(0);
+  width: 100%;
+  transition: all 0.25s ease;
+  position: relative;
+  border: 16px solid #222;
+  background: url(../images/main/projects/project-img02.JPG) no-repeat;
+  background-position: center top;
+  background-size: cover;
+  border-radius: 15px;
+  z-index: 2;
+}
+#projects .container .banner ul li a .project-img02::after {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  margin-top: -488px;
+  content: "";
+  border-radius: 100px;
+  background-color: #999;
+}
+#projects .container .banner ul li a .project-img03 {
+  padding-top: 53%;
+  image-rendering: -webkit-optimize-contrast;
+  transform: translateZ(0);
+  width: 100%;
+  transition: all 0.25s ease;
+  position: relative;
+  border: 16px solid #222;
+  background: url(../images/main/projects/project-img03.JPG) no-repeat;
+  background-position: center top;
+  background-size: cover;
+  border-radius: 15px;
+  z-index: 2;
+}
+#projects .container .banner ul li a .project-img03::after {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  margin-top: -488px;
+  content: "";
+  border-radius: 100px;
+  background-color: #999;
+}
+#projects .container .banner ul li a .project-img04 {
+  padding-top: 53%;
+  image-rendering: -webkit-optimize-contrast;
+  transform: translateZ(0);
+  width: 100%;
+  transition: all 0.25s ease;
+  position: relative;
+  border: 16px solid #222;
+  background: url(../images/main/projects/project-img04.JPG) no-repeat;
+  background-position: center top;
+  background-size: cover;
+  border-radius: 15px;
+  z-index: 2;
+}
+#projects .container .banner ul li a .project-img04::after {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  margin-top: -488px;
+  content: "";
+  border-radius: 100px;
+  background-color: #999;
+}
+#projects .container .banner ul li a .project-img05 {
+  padding-top: 53%;
+  image-rendering: -webkit-optimize-contrast;
+  transform: translateZ(0);
+  width: 100%;
+  transition: all 0.25s ease;
+  position: relative;
+  border: 16px solid #222;
+  background: url(../images/main/projects/project-img05.JPG) no-repeat;
+  background-position: center top;
+  background-size: cover;
+  border-radius: 15px;
+  z-index: 2;
+}
+#projects .container .banner ul li a .project-img05::after {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  margin-top: -488px;
+  content: "";
+  border-radius: 100px;
+  background-color: #999;
+}
+#projects .container .banner ul li a .project-img06 {
+  padding-top: 53%;
+  image-rendering: -webkit-optimize-contrast;
+  transform: translateZ(0);
+  width: 100%;
+  transition: all 0.25s ease;
+  position: relative;
+  border: 16px solid #222;
+  background: url(../images/main/projects/project-img06.JPG) no-repeat;
+  background-position: center top;
+  background-size: cover;
+  border-radius: 15px;
+  z-index: 2;
+}
+#projects .container .banner ul li a .project-img06::after {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  margin-top: -488px;
+  content: "";
+  border-radius: 100px;
+  background-color: #999;
+}
+#projects .container .banner ul li a .project-img07 {
+  padding-top: 53%;
+  image-rendering: -webkit-optimize-contrast;
+  transform: translateZ(0);
+  width: 100%;
+  transition: all 0.25s ease;
+  position: relative;
+  border: 16px solid #222;
+  background: url(../images/main/projects/project-img07.JPG) no-repeat;
+  background-position: center top;
+  background-size: cover;
+  border-radius: 15px;
+  z-index: 2;
+}
+#projects .container .banner ul li a .project-img07::after {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  margin-top: -488px;
+  content: "";
+  border-radius: 100px;
+  background-color: #999;
+}
+#projects .container .banner ul li .txt,
+#projects .container .banner ul li button {
+  color: #222;
+  transition: all 0.25s ease;
+}
+#projects .container .banner ul li .txt {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 30px 20px 0;
+  box-sizing: border-box;
+}
+#projects .container .banner ul li .txt .txt-title {
+  flex-basis: 35%;
+}
+#projects .container .banner ul li .txt .txt-title h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+#projects .container .banner ul li .txt .txt-title .btns {
+  position: relative;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+#projects .container .banner ul li .txt .txt-title .btns button {
+  font-size: 16px;
+  font-weight: 500;
+  width: auto;
+  height: auto;
+}
+#projects .container .banner ul li .txt .txt-title .btns:before {
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  font-size: 11px;
+  content: "\f061";
+  font-family: "FontAwesome";
+}
+#projects .container .banner ul li .txt dl dt,
+#projects .container .banner ul li .txt dl dd {
+  display: inline-block;
+  line-height: 1.5;
+}
+#projects .container .banner ul li .txt dl dt {
+  width: 30%;
+  font-size: 16px;
+  font-weight: 500;
+}
+#projects .container .banner ul li .txt dl dd {
+  width: 55%;
+  font-size: 14px;
+}
+
+#etc {
+  width: 100%;
+  padding: 130px 0;
+  background-color: #ececec;
+}
+#etc .container {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+#etc .container .title-box {
+  color: #2b38e9;
+}
+#etc .container .title-box h2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: clamp(29px, 49 / 1920 * 100vw, 49px);
+}
+#etc .container .title-box p {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 16px;
+}
+#etc .contents-box {
+  margin-bottom: 50px;
+}
+#etc .contents-box .banner {
+  margin-top: 100px;
+}
+#etc .contents-box .banner ul {
+  display: flex;
+  width: 100%;
+}
+#etc .contents-box .banner ul li {
+  position: relative;
+  line-height: 1.5;
+  transition: all 0.5s ease;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+#etc .contents-box .banner ul li a {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#etc .contents-box .banner ul li a .img {
+  border: 1px solid #aaa;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: block;
+  image-rendering: -webkit-optimize-contrast;
+  transform: translateZ(0);
+  transition: all 0.5s ease;
+}
+#etc .contents-box .banner ul li a .txt-box {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  color: #fff;
+}
+#etc .contents-box .banner ul li a .txt-box .more {
+  margin-bottom: 14px;
+}
+#etc .contents-box .banner ul li a .txt-box .more:after {
+  display: block;
+  font-size: 13px;
+  content: "\f00e";
+  font-family: "FontAwesome";
+}
+#etc .contents-box .banner ul li a .txt-box .sticker {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+#etc .contents-box .banner ul li a .txt-box p,
+#etc .contents-box .banner ul li a .txt-box .date,
+#etc .contents-box .banner ul li a .txt-box .more {
+  font-size: 13px;
+}
+#etc .contents-box .banner .etc-pagination {
+  z-index: 1;
+  width: 100%;
+  bottom: -50px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#etc .contents-box .banner .etc-pagination .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background-color: #333;
+  border-radius: 100px;
+  opacity: 1;
+}
+#etc .contents-box .banner .etc-pagination .swiper-pagination-bullet-active {
+  width: 50px;
+  height: 6px;
+  transition: width 0.5s;
+  border-radius: 100px;
+  background: #2b38e9;
+  position: relative;
+}
+
+#contact {
+  width: 100%;
+  height: 100vh;
+  padding: 130px 0;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+#contact .container {
+  position: relative;
+  margin: 0 auto;
+}
+#contact .container .contact-main {
+  width: 380px;
+}
+#contact .container .contact-main .info-box {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: clamp(29px, 49 / 1920 * 100vw, 49px);
+}
+#contact .container .contact-main p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+#contact .container .contact-main .email {
+  margin-top: 20px;
+}
+#contact .container .contact-main .email strong {
+  display: inline-block;
+  width: 50px;
+  font-weight: 500;
+}
+#contact .container .contact-main .email .weight {
+  padding-left: 20px;
+}
+#contact .container .contact-main a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 50px;
+  margin-top: 50px;
+  font-family: "Noto Sans KR";
+  font-size: 15px;
+  text-align: center;
+  color: #222;
+  border: 2px solid #222;
+  background-color: #fff;
+  border-radius: 5px;
+}
+#contact .container .contact-main a:hover {
+  color: #fff;
+  border: 1px solid #2b38e9;
+  background-color: #2b38e9;
+}
+#contact .container .contact-main a span {
+  transform: translateY(-10%);
+}
+#contact .container .email-box {
+  flex-direction: column;
+  width: clamp(380px, 33.8541666667vw, 650px);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#contact .container .email-box ul {
+  width: 100%;
+}
+#contact .container .email-box ul li {
+  display: flex;
+  padding: 5px 0;
+  font-size: 15px;
+}
+#contact .container .email-box ul li label {
+  display: block;
+  flex-basis: 20%;
+  margin: 10px 0;
+  font-size: 17px;
+  font-weight: 500;
+}
+#contact .container .email-box ul li input {
+  flex-basis: 80%;
+  padding: 0 10px;
+  font-family: "Noto Sans KR";
+}
+#contact .container .email-box ul li #contents {
+  width: 100%;
+  padding: 10px 10px;
+  font-family: "Noto Sans KR";
+  resize: none;
+}
+#contact .container .email-box .btns {
+  padding-top: 10px;
+  text-align: center;
+}
+#contact .container .email-box .btns .btn-send {
+  width: 220px;
+  height: 50px;
+  font-family: "Noto Sans KR";
+  font-size: 15px;
+  color: #fff;
+  background-color: #222;
+  border-radius: 5px;
+}
+#contact .container .email-box .btns .btn-send:hover {
+  color: #fff;
+  border: 1px solid #2b38e9;
+  background-color: #2b38e9;
+}
+#contact .message-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  z-index: 99;
+  pointer-events: none;
+  transition: all 0.25s ease;
+}
+#contact .message-box.on {
+  opacity: 1;
+  pointer-events: auto;
+}
+#contact .message-box .txt {
+  display: block;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+}
+#contact .message-box .btn-close {
+  width: 100px;
+  height: 50px;
+  margin-top: 50px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+@media all {
+  #background-video {
+    width: 100vw;
+    height: auto;
+  }
+}
