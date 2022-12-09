@@ -106,10 +106,6 @@
           &.show {
             display: block;
           }
-          &.active {
-            border-bottom: 3px solid #fff;
-            font-weight: 500;
-          }
           .title {
             @include clampCal(33, 70);
             font-weight: 700;
@@ -124,6 +120,11 @@
               font-size: 2rem;
               padding: 10px 0;
               color: #fff;
+
+              &.active {
+                border-bottom: 3px solid #fff;
+                font-weight: 500;
+              }
             }
           }
         }

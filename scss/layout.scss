@@ -36,18 +36,7 @@ button {
   .container {
     display: flex;
     justify-content: center;
-    .logo {
-      position: absolute;
-      left: 50px;
-      a {
-        height: 100px;
-        display: flex;
-        align-items: center;
-        img {
-          height: 50px;
-        }
-      }
-    }
+
     .utill {
       position: absolute;
       height: 100px;
@@ -106,6 +95,19 @@ button {
             font-size: 19px;
           }
         }
+      }
+    }
+  }
+
+  .logo {
+    position: absolute;
+    left: 50px;
+    a {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      img {
+        height: 50px;
       }
     }
   }
