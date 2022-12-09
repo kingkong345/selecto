@@ -113,6 +113,13 @@
   left: 8rem;
   z-index: 5;
 }
+#main #category .container .category-left .category-btn.show {
+  display: block;
+}
+#main #category .container .category-left .category-btn.active {
+  border-bottom: 3px solid #fff;
+  font-weight: 500;
+}
 #main #category .container .category-left .category-btn .title {
   font-size: clamp(33px, 70 / 1920 * 100vw, 70px);
   font-weight: 700;

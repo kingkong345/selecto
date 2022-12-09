@@ -103,6 +103,13 @@
           top: 8rem;
           left: 8rem;
           z-index: 5;
+          &.show {
+            display: block;
+          }
+          &.active {
+            border-bottom: 3px solid #fff;
+            font-weight: 500;
+          }
           .title {
             @include clampCal(33, 70);
             font-weight: 700;
